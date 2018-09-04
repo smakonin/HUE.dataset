@@ -1,0 +1,90 @@
+House  FirstReading LastReading Cover HouseType    Facing  Region RUs EVs SN HVAC
+------ ------------ ----------- ----- ------------ ------- ------ --- --- -- --------------------------
+1      2012-06-01   2015-10-03  1.000 bungalow     South   YVR    1       1  FAGF + FPG + HP
+2      2016-06-09   2018-06-05  0.992 duplex       North   YVR    0          IFRHG + FPG, NAC
+3      2015-01-27   2018-01-29  0.987 modern       South   YVR    2          IFRHG + 1 BHE, NAC
+4      2015-01-30   2018-01-29  0.995 character    West    YVR    1          FAGF + IFRHG, NAC
+5      2015-01-30   2018-01-29  0.995 modern       South   YVR    1          IFRHG, NAC
+6      2015-01-30   2018-01-29  0.997 apartment    SW      YVR    0          BHE, NAC
+7      2015-01-30   2018-01-29  0.997 
+8      2015-02-21   2018-02-20  0.987 character    South   YVR    0          FAGF, PAC
+9      2015-05-01   2018-02-21  0.996 special      South   YVR    0          IFRHG + FPG, NAC
+10     2015-02-21   2018-02-20  0.995 special      South   YVR    0          FAGF, NAC
+11     2015-02-21   2018-02-20  0.990 duplex       North   YVR    0          FAGF + IFRHE + 1 BHE, NAC
+12     2015-02-21   2018-02-20  0.992 apartment    NW      YVR    0          IFRHG, NAC
+13     2015-02-21   2018-02-20  0.998 special      North   YVR    1          FAGF, NAC
+14     2015-02-21   2018-02-20  0.995 modern       South   YVR    1          IFRHG, NAC
+15     2015-09-29   2018-02-20  0.995 bungalow     ENE     WYJ    1          FAGF, NAC
+16     2017-11-01   2018-02-19  0.792 apartment    NE      YVR    0          BHE, NAC
+17     2016-06-01   2017-04-29  0.996 apartment    SW      YVR    0          BHE, NAC
+18     2015-03-16   2018-03-15  0.986 bungalow     East    YVR    0    85    FAGF, PAC
+19     2015-03-26   2018-03-25  0.993 special      West    YVR    0          FAGF, NAC
+20     2015-08-21   2018-04-20  0.998 character    North   YVR    0          WRHIR, NAC
+21     2017-11-01   2018-06-04  0.989 laneway      West    YVR    0          IFRHG, NAC
+22     2016-06-29   2018-06-05  0.996 apartment    South   YVR    0          BHE, NAC
+
+***
+
+Each house is in the Metro Vancouver area in British Columbia, Canada.
+All houses are powered by the provincial power utility BC Hydro (https://www.bchydro.com/).
+Power generation is nearly 100% hydro-electric with large dams.
+The majority of houses are heated by natural gas provided by FortisBC (https://www.fortisbc.com/).
+Hourly energy data is downloaded directly by the customer from the BC Hydro website.
+Customers login to there account, download the data, and donated it to this dataset for research.
+Donated data is anonymized to protect the privacy of the donors.
+
+First Reading:
+    The first reading date in the house's data file.
+
+Last Reading:
+    The last reading date in the house's data file.
+    At the end of each year, some house files will be updated with new data.
+
+Cover (data coverage):
+    The percent of non-missing readings. A value of 1.000 is 100%.
+
+House Types:
+    character   - multi-level houses build before 1940
+    bungalow    - single-level (w/ basement) houses built in the 1940s and 1950s
+    special     - two-level houses built between 1965 to 1989
+    modern      - two-/three-level houses build in the 1990s and afterwards
+    duplex      - two houses that share a common wall, can be side-by-side or front-back
+    triplex     - three houses that share common walls: top unit, front unit, and back unit
+    townhouse   - row houses that share one or two common walls
+    apartment   - hight-rise or low-rise living units
+    laneway     - small homes built in the backyard of the main house which open onto the back lane
+
+Facing:
+    What direction the house is facing.
+    This often has an impact on house cooling durning the summer.
+    East and West facing houses get hotter faster.
+
+Region:
+    The 3-letter code of the house's regional weather station.
+        YVR - Vancouver and Lower Mainland area
+        WYJ - Victoria and surrounding area
+
+RUs (rentals units):
+    The number of rental suites in the house. More rental suites means higher consumption.
+
+EVs (electric vehicles):
+    If there is an EV, what is the size of the battery (in kWh).
+
+HVAC (heating, ventilation, and air conditioning):
+    A description of the HVAC systems which also has an impact on power consumption.
+
+    Here is the short codes legend:
+        FAGF  - forced air gas furnace
+        HP    - heat pump (incl. a/c)
+        FPG   - gas fireplace
+        FPE   - electric fireplace
+        IFRHG - in-floor radiant heating (gas boiler)
+        NAC   - no a/c
+        FAC   - fixed a/c unit
+        PAC   - portable a/c unit
+        BHE   - baseboard heater (electric)
+        IFRHE - in-floor radiant heating (electric)
+        WRHIR - water radiant heat (cast iron radiators)
+
+SN (special notes):
+    (1) HVAC heat change over to gas at <= 2°C
