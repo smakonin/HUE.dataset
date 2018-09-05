@@ -5,8 +5,8 @@ These are the scripts that where used to capture data and convert that raw data 
 
 The dataset can be downloaded from Harvard Dataverse via: https://doi.org/10.7910/DVN/N3HGRN
 
-To read more about this dataset down load the accompanying paper at: xxx
+To read more about this dataset down load the accompanying paper at: http://summit.sfu.ca/item/18163
 
 The use of these files and/or the RAE dataset requires you to cite:
 
-Stephen Makonin, “HUE: The Hourly Usage of Energy Dataset for Buildings in British Columbia,” arXiv preprint arXiv:, 2018.
+Stephen Makonin, “HUE: The Hourly Usage of Energy Dataset for Buildings in British Columbia,” SFU Summit preprint: http://summit.sfu.ca/item/16786, 2018.

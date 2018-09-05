@@ -6,7 +6,7 @@ House  FirstReading LastReading Cover HouseType    Facing  Region RUs EVs SN HVA
 4      2015-01-30   2018-01-29  0.995 character    West    YVR    1          FAGF + IFRHG, NAC
 5      2015-01-30   2018-01-29  0.995 modern       South   YVR    1          IFRHG, NAC
 6      2015-01-30   2018-01-29  0.997 apartment    SW      YVR    0          BHE, NAC
-7      2015-01-30   2018-01-29  0.997 
+7      2015-01-30   2018-01-29  0.997
 8      2015-02-21   2018-02-20  0.987 character    South   YVR    0          FAGF, PAC
 9      2015-05-01   2018-02-21  0.996 special      South   YVR    0          IFRHG + FPG, NAC
 10     2015-02-21   2018-02-20  0.995 special      South   YVR    0          FAGF, NAC
@@ -25,7 +25,7 @@ House  FirstReading LastReading Cover HouseType    Facing  Region RUs EVs SN HVA
 
 ***
 
-Each house is in the Metro Vancouver area in British Columbia, Canada.
+Each house is in the Metro Vancouver area or on Vancouver Island in British Columbia, Canada.
 All houses are powered by the provincial power utility BC Hydro (https://www.bchydro.com/).
 Power generation is nearly 100% hydro-electric with large dams.
 The majority of houses are heated by natural gas provided by FortisBC (https://www.fortisbc.com/).
