@@ -1,7 +1,7 @@
 House  FirstReading LastReading Cover HouseType    Facing  Region RUs EVs SN HVAC
 ------ ------------ ----------- ----- ------------ ------- ------ --- --- -- --------------------------
 1      2012-06-01   2015-10-03  1.000 bungalow     South   YVR    1       1  FAGF + FPG + HP
-2      2016-06-09   2018-06-05  0.992 duplex       North   YVR    0          IFRHG + FPG, NAC
+2      2016-06-09   2019-11-20  0.994 duplex       North   YVR    0       2  IFRHG + FPG, NAC
 3      2015-01-27   2018-01-29  0.987 modern       South   YVR    2          IFRHG + 1 BHE, NAC
 4      2015-01-30   2018-01-29  0.995 character    West    YVR    1          FAGF + IFRHG, NAC
 5      2015-01-30   2018-01-29  0.995 modern       South   YVR    1          IFRHG, NAC
@@ -15,7 +15,7 @@ House  FirstReading LastReading Cover HouseType    Facing  Region RUs EVs SN HVA
 13     2015-02-21   2018-02-20  0.998 special      North   YVR    1          FAGF, NAC
 14     2015-02-21   2018-02-20  0.995 modern       South   YVR    1          IFRHG, NAC
 15     2015-09-29   2018-02-20  0.995 bungalow     ENE     WYJ    1          FAGF, NAC
-16     2017-11-01   2018-02-19  0.792 apartment    NE      YVR    0          BHE, NAC
+16     2017-11-01   2019-02-18  0.881 apartment    NE      YVR    0          BHE, NAC
 17     2016-06-01   2017-04-29  0.996 apartment    SW      YVR    0          BHE, NAC
 18     2015-03-16   2018-03-15  0.986 bungalow     East    YVR    0    85    FAGF, PAC
 19     2015-03-26   2018-03-25  0.993 special      West    YVR    0          FAGF, NAC
@@ -85,6 +85,13 @@ HVAC (heating, ventilation, and air conditioning):
         BHE   - baseboard heater (electric)
         IFRHE - in-floor radiant heating (electric)
         WRHIR - water radiant heat (cast iron radiators)
+        GEOTH - geothermal
 
 SN (special notes):
     (1) HVAC heat change over to gas at <= 2°C
+    (1) Same house used in AMPds and RAE House 1 datasets
+    (2) Same house used in RAE House 2 dataset
+
+
+For more information on the AMPds datset please visit: http://ampds.org
+For more information on the RAE dataset please read: http://makonin.com/doc/MDPI-Data_2018.pdf
