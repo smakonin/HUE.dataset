@@ -1,0 +1,5 @@
+YVR: https://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=2013-06-11%7C2020-04-19&dlyRange=2013-06-13%7C2020-04-19&mlyRange=%7C&StationID=51442&Prov=BC&urlExtension=_e.html&searchType=stnProx&optLimit=specDate&Month=1&Day=19&StartYear=2019&EndYear=2020&Year=2020&selRowPerPage=25&Line=8&txtRadius=25&optProxType=navLink&txtLatDecDeg=49.278388888889&txtLongDecDeg=-122.91804444444&timeframe=1
+WYJ: https://climate.weather.gc.ca/climate_data/hourly_data_e.html?hlyRange=1994-02-01%7C2020-04-19&dlyRange=1992-12-01%7C2020-04-19&mlyRange=1992-01-01%7C2007-02-01&StationID=6812&Prov=BC&urlExtension=_e.html&searchType=stnName&optLimit=yearRange&StartYear=2019&EndYear=2020&selRowPerPage=25&Line=5&searchMethod=contains&Month=4&Day=19&txtStationName=Victoria&timeframe=1&Year=2020
+
+
+BC Weather Stations: http://hydrology.princeton.edu/~sdery/datafiles/WVRTombstone.htm

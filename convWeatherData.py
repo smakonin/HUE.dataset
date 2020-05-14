@@ -10,6 +10,11 @@ print()
 print('Convert Envirment Canada Weather Data -- v1.0 (Jan. 28, 2018)')
 print()
 
+print('This utility is now deprecated. Use dlWeatherData.py instead.')
+print()
+exit(0)
+
+
 if len(sys.argv) != 3:
     print()
     print('USAGE: %s [Weather Station] [year]' % (sys.argv[0]))
@@ -46,7 +51,7 @@ for filename in sorted(glob.iglob(search_filename)):
 
     fp = open(filename, 'r')
     reader = csv.reader(fp)
-    
+
     missing_row = False
     for row in reader:
         if len(row) < 1: continue

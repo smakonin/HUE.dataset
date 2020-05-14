@@ -8,7 +8,7 @@ import sys, csv, glob
 names = {'res': 'Residential', 'com': 'Commercial', 'ind': 'Industrial'}
 
 print()
-print('Convert BCHydro Export Data -- v1.0 (Jan. 28, 2018)')
+print('Convert BCHydro Export Data -- v1.2 (May 14, 2020)')
 print()
 
 if len(sys.argv) != 3:
@@ -38,7 +38,8 @@ for row in reader:
     if len(row) == 2: value = []
     if len(row) == 3: value = row[2].split(',')
     if len(row) >= 4: exit(1)
-    key = '%s-%d' % (row[1].strip(), int(row[0]))
+    key = '%s-%s' % (row[1].strip(), row[0].strip())
+    #print(key)
     mappings[key] = value
 
 if mkey not in mappings:
@@ -53,6 +54,9 @@ ofp = open('./final/%s_%d.csv' % (names[btype], bid), 'w')
 ofp.write('date,hour,energy_kWh\n')
 count = 0
 nonnull = 0
+start_dt = ''
+end_dt = ''
+
 for fid in mappings[mkey]:
     fp = open('./raw.energy/%s/%s.csv' % (btype, fid), 'r')
     reader = csv.reader(fp)
@@ -63,6 +67,7 @@ for fid in mappings[mkey]:
         if '-' in ts:
             date = ts[:10]
             hour = ts[11:13]
+            hour = hour.replace(':', '')
         elif '/' in ts:
             (dt,tm) = ts.split(' ')
             dt = dt.split('/')
@@ -78,11 +83,17 @@ for fid in mappings[mkey]:
             consumption = ''
         else:
             nonnull += 1
+
+        if start_dt == '':
+            start_dt = date
+        end_dt = date
+
         ofp.write('%s,%s,%s\n' % (date, hour, consumption))
         count += 1
     fp.close()
 ofp.close()
 
+print('Date range is from', start_dt, 'to', end_dt, '(over', count // 24, 'days or', round(count // 24 / 365, 1), 'years)')
 print('Missing data points:', count - nonnull)
 print('Data coverage is %.3f' % (nonnull / count))
 print('done!')
