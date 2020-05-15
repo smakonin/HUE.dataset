@@ -10,12 +10,13 @@ print()
 print('Download Envirment Canada Weather Data -- v1.0 (May 14, 2020)')
 print()
 
-if len(sys.argv) < 3:
+if len(sys.argv) < 4:
     print()
-    print('USAGE: %s [Weather Station] [year]' % (sys.argv[0]))
+    print('USAGE: %s [Weather Station] [year] [output location]' % (sys.argv[0]))
     print()
     print('Weather Stations used: YVR, WYJ')
-    print('Year example: 2016, if "flush" then outfiles is deleted')
+    print('Year example: 2016, if "flush" then data is removed except for the header')
+    print('Output location example: ./final')
     print()
     print()
     exit(1)
@@ -65,8 +66,9 @@ colums_wanted = [
 
 station_name = sys.argv[1]
 year = sys.argv[2]
+location = sys.argv[3]
 
-filename = './final/Weather_%s.csv' % station_name
+filename = '%s/Weather_%s.csv' % (location, station_name)
 
 if year == 'flush':
     f = open(filename, 'w')
