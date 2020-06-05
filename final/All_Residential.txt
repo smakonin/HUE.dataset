@@ -24,6 +24,10 @@ House  FirstReading LastReading Cover HouseType    Facing  Region RUs EVs SN HVA
 22     2016-06-29   2018-06-05  0.996 apartment    South   YVR    0          BHE, NAC
 23     2017-07-27   2020-04-05  0.985 apartment    SE      YVR    0          BHE, NAC, FPG
 24     2017-05-13   2020-05-12  0.998 modern       South   YVR    0          FAGF, FAC
+25     2017-05-15   2020-05-14  0.994 character    South   YVR    0          IFRHG, NAC
+26     2019-11-29   2020-05-20  0.997 apartment    NNW     YVR    0          GEOTH, NAC
+27     2019-03-06   2020-05-20  0.997 apartment    NW      YVR    0          BHE, NAC
+28     2018-08-01   2020-05-19  0.998 special      North   YVR    0          FAGF + 1 FPE + 2 FPG, NAC
 
 ***
 
